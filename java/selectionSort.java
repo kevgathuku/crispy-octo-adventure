@@ -7,6 +7,7 @@ class Scratch {
         sc.selectionSort(unsorted);
     }
 
+    // О(n2)
     public void selectionSort(int[] lst) {
         int len = lst.length;
         for (int i = 0; i < len; i++ ) {
@@ -20,7 +21,7 @@ class Scratch {
                     smallestIndex = j; // save position of smallest item
                 }
             }
-            int temp = lst[i]; // save the number in the current position
+            int temp = lst[i]; // save the current number in position i
             lst[i] = smallest; // set the smallest in the correct position
             lst[smallestIndex] = temp; // set the current number in the smallest position
         }
