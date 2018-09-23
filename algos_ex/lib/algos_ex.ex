@@ -22,6 +22,10 @@ defmodule Algos do
     do_selection(lst, [])
   end
 
+  def do_selection([], acc) do
+    acc
+  end
+
   def do_selection([head | []], acc) do
     acc ++ [head]
   end
